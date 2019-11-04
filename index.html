@@ -11,81 +11,87 @@
 <body class="body-newsletter">
  
         <header class="main-header">
-            <h1>Signup for our newletter</h1>
+            <h1>the code review</h1>
+            <h2>Signup for our newletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </header>
         
         <div class="wrapper">
             <form action="index.html" method="post">
-                <div class="primary col">
-                    <h1>contact information</h1>
-                    <ul>
-                        <li class="form-row">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="user_name" placeholder="Required">
-                        </li>   
-                        <li class="form-row">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="user_email" placeholder="Required">
-                        </li>
-                        <li class="form-row">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        </li>
-                        <li class="form-row">
-                            <label for="stAdd">Street Address</label>
-                            <input type="text" id="stAdd" name="user_stAdd">
-                        </li>
-                        <li class="form-row">
-                            <label for="city">City</label> 
-                            <input type="text" id="city" name="user_city">
-                        </li>
-                        <li class="form-row">
-                            <label for="state">State</label>
-                            <select name="state" id="state">
-                                <option selected>Choose State</option>
-                                <option value="bc">British Columbia</option>
-                                <option value="ab">Alberta</option>
-                                <option value="on">Ontario</option>
-                                <option value="ns">Nova Scotia</option>
-                            </select>
-                        </li>
-                        <li class="form-row">
-                            <label for="zipcode">Zip Code</label>
-                            <input type="text" id="zipcode" name="user_zip">
-                        </li>
-                    </ul>
-                </div>
+                <fieldset>
+                    <div class="primary col">
+                        <legend>contact information</legend>
+                        <ul>
+                            <li class="form-row">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="user_name" placeholder="Required">
+                            </li>   
+                            <li class="form-row">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="user_email" placeholder="Required">
+                            </li>
+                            <li class="form-row">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </li>
+                            <li class="form-row">
+                                <label for="stAdd">Street Address</label>
+                                <input type="text" id="stAdd" name="user_stAdd">
+                            </li>
+                            <li class="form-row">
+                                <label for="city">City</label> 
+                                <input type="text" id="city" name="user_city">
+                            </li>
+                            <li class="form-row">
+                                <label for="state">State</label>
+                                <select name="state" id="state">
+                                    <option selected>Choose State</option>
+                                    <option value="bc">British Columbia</option>
+                                    <option value="ab">Alberta</option>
+                                    <option value="on">Ontario</option>
+                                    <option value="ns">Nova Scotia</option>
+                                </select>
+                            </li>
+                            <li class="form-row">
+                                <label for="zipcode">Zip Code</label>
+                                <input type="text" id="zipcode" name="user_zip">
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
 
+                <fieldset>
                 <div class="secondary col">
-                    <h1>Newsletter</h1>
+                    <legend>Newsletter</legend>
                     <p>Select the newsletters you would like to recieve</p>
                     <ul>
                         <li class="news-row">
-                            <input type="checkbox" name="newsletter" value="html"><span class="check-text">HTML News</span><br>
+                            <input type="checkbox" name="newsletter" value="html" id="cb-html"><label for="html-news"><span class="check-text">HTML News</span></label><br>
                         </li>                    
                         <li class="news-row">                    
-                            <input type="checkbox" name="newsletter" value="css"><span class="check-text">CSS News</span><br>
+                            <input type="checkbox" name="newsletter" value="css" id="cb-css"><label for="css-news"><span class="check-text">CSS News</span></label><br>
                         </li>
                         <li class="news-row">
-                            <input type="checkbox" name="newsletter" value="javascript"><span class="check-text">Javascript News</span><br>
+                            <input type="checkbox" name="newsletter" value="javascript" id="cb-js"><label for="javascripte-news"><span class="check-text">Javascript News</span></label><br>
                         </li>
                     </ul>                    
                     <p>Newletter format</p>
                     <ul>
                         <li class="news-row">
-                            <input type="radio" name="format" value="html"> HTML<br>
+                            <input type="radio" name="format" value="html" id="radio-html"><label for="format-html">HTML</label> <br>
                         </li>
                         <li class="news-row">
-                            <input type="radio" name="format" value="plain"> Plain text<br>
+                            <input type="radio" name="format" value="plain" id="radio-text"><label for="format-text">Plain text</label><br>
                         </li>
                     </ul>
-                    <p>Other topics you'd like to hear about</p>
+
+                    <lable for="comment">Other topics you'd like to hear about</lable>
                     
-                    <textarea class="form-row" name="comment" rows="4"></textarea>
+                    <textarea class="form-row" name="comment" rows="4" id="comment"></textarea>
                         
                     <button type="submit">Sign Up</button> 
                 </div>
+                </fieldset>
             </form>
         </div>
 
