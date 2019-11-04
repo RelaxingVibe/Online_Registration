@@ -15,7 +15,6 @@ ul {
 fieldset {
     border-style: none;
     margin: 0;
-    padding: 0;
 }
 
 legend {
@@ -69,12 +68,6 @@ h1 {
 .wrapper {
     border-top: 2px groove rgb(43, 43, 43);
     padding: 15px 0;
-    margin: 5px 0 0 0;
-}
-
-.secondary {
-    border-top: 2px groove rgb(43, 43, 43);
-    padding: 5px 0;
     margin: 5px 0 0 0;
 }
 
@@ -146,6 +139,12 @@ border: 1px solid #737fb6;
 border-width: 1px 1px 3px;
 box-shadow: 0 -1px 0 rgba(104, 125, 196, 0.1) inset;
 margin-bottom: 10px;
+}
+
+#primary {
+    border-bottom: 2px groove rgb(43, 43, 43);
+    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* ===============================
