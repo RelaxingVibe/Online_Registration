@@ -25,35 +25,37 @@ legend {
 }
 
 h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(53, 53, 53);
     color: white;
     text-transform: uppercase;
     font-size: 1.75rem;
-    margin: 0;
+    margin: 0 auto;
     padding: 2rem 0;
 }
 
-
+p {
+    margin: 0;
+}
 
 /* ===============================
     Base Layout Style
 ================================*/
 
 .body-newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 100vh; 
+    max-width: 90%;
+    margin: 0 auto;
     padding: 0;
-    min-height: 100vh;
 }
 
 .main-header {
     text-align: center;
     border-bottom: 4px groove rgb(43, 43, 43);
+}
+
+.main-h1 {
+    margin-left: calc(45% - 50vw);
+    margin-right: calc(45% - 50vw);
 }
 
 .main-header h2 {
@@ -63,6 +65,7 @@ h1 {
 .main-header p {
     font-size: .75rem;
     padding-bottom: 30px;
+    
 }
 
 .wrapper {
@@ -119,6 +122,9 @@ input[type='email'] {
 input[type='text']:focus,
 input[type='email']:focus {
     text-align:left;
+    outline: none !important;
+    border: 2px solid rgb(115, 158, 250);
+    box-shadow: 0 0 10px #719ECE;
 }
 
 input[type="radio"],
@@ -175,6 +181,17 @@ opacity: .35;
 ================================*/
 
 @media (min-width: 768px) {
+    
+    .body-newsletter {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin-left: calc(37.5% - 50vw);
+        margin-right: calc(37.5% - 50vw)
+    }
+
     .form-row {
         display: flex;
     }
